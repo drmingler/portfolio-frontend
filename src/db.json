@@ -1,0 +1,65 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "Name": "David Emmanuel Olarewaju",
+      "phone": "+36703924096",
+      "skypeinvite": "https://join.skype.com/invite/nxNcSUGL0Gjn",
+      "skype": "davidemmanuel75",
+      "email": "olarewajud2@gmail.com",
+      "address": "Szigeti utca 6B 7624 Pécs Hungary",
+      "linkedin": "https://linkedin.com/in/emmanuel-olarewaju-david",
+      "github": "https://github.com/drmingler/",
+      "description": "I am a software engineer able to build a Web presence from the ground up - from concept, navigation, layout and programming to UX and SEO. Skilled at writing well-designed, testable and efficient code using current best practices in Web development. Fast learner, hard worker and team player who is proficient in an array of scripting languages and multimedia Web tools.",
+      "cv-link": "emmmanuel/cv"
+    }
+  ],
+  "achievements": [
+    {
+      "id": 1,
+      "name": "University Of Pécs",
+      "startDate": "2019",
+      "endDate": "2020",
+      "description": "Bachelors Computer Science Lorem",
+      "typeOfDetails": "Education"
+    },
+    {
+      "id": 2,
+      "name": "Federal University Of Technology Minna",
+      "startDate": "2018",
+      "endDate": "2019",
+      "description": "Bachelors  Mathematics and Statistics",
+      "typeOfDetails": "Employment"
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "name": "My Reads Web Application",
+      "picture": "https://github.com/drmingler/My-Read-App/blob/master/public/homepage.png",
+      "stacks": ["html5", "css3", "JavaScript", "bower", "grunt", "grunt"],
+      "description": "Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.",
+      "typeOfProject": "Websites",
+      "userId" : "1"
+    },
+    {
+      "id": 1,
+      "name": "Mobile Flash Cards",
+      "picture": "https://github.com/drmingler/Mobile-FlashCards/blob/master/images/image1.png",
+      "stacks": ["html5", "css3", "JavaScript", "bower", "grunt", "grunt"],
+      "description": "Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.",
+      "typeOfProject": "Mobile-Apps",
+      "userId" : "1"
+    },
+    {
+      "id": 1,
+      "name": "Would You Rather App",
+      "picture": "https://github.com/drmingler/Would-You-Rather-App/raw/master/public/view2.png",
+      "stacks": ["html5", "css3", "JavaScript", "bower"],
+      "description": "Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.",
+      "typeOfProject": "Websites",
+      "userId" : "1"
+    }
+  ]
+}
