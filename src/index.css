@@ -62,9 +62,11 @@ nav .menu-items li,
   width: 30%;
   margin-top: 50px;
 }
+
 .menu-items a {
   color: white;
 }
+
 header {
   height: 100%;
   background-repeat: no-repeat;
