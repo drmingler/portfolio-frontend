@@ -627,6 +627,7 @@ section {
   color: #6d56c1;
 }
 
+
 .mobile-menu {
   height: 0;
   width: 0;
@@ -638,13 +639,6 @@ section {
   z-index: 9999;
   opacity: 0;
   transition: all 0.3s ease;
-}
-
-.mobile-menu.active {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  opacity: 1;
 }
 .mobile-menu-wrapper {
   height: 100%;
@@ -658,6 +652,12 @@ section {
   margin-top: 60px;
   margin-bottom: 40px;
   overflow: auto;
+}
+.mobile-menu.active {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 1;
 }
 
 .mobile-menu-wrapper a {

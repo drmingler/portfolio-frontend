@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Link } from "react-scroll";
 
 const MainNavBar = function() {
@@ -18,74 +18,11 @@ const MainNavBar = function() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div id="menu-area" className={`${isScroll ? "cus-menu" : ""}`}>
-      <div className="container">
-        <nav>
-          <ul className="menu-items">
-            <li>
-              <Link
-                activeClass="active"
-                to="header"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                HELLO
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="section1"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                RESUME
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="section1"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                PORTFOLIO
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="section1"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                CONTACT
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        <div className="mobile-menu-icon" onClick={() => setMobileMenu(true)}>
-          <span>
-            <i className="fa fa-bars" aria-hidden="true" />
-          </span>
-        </div>
-      </div>
-
-      <div className={`mobile-menu ${isMobileMenu ? "active" : ""}`}>
+    <Fragment>
+      <div id="menu-area" className={`${isScroll ? "cus-menu" : ""}`}>
         <div className="container">
-          <div className="close-icon" onClick={() => setMobileMenu(false)}>
-            <i className="fa fa-close" aria-hidden="true" />
-          </div>
-          <nav className="mobile-menu-wrapper">
-            <ul>
+          <nav>
+            <ul className="menu-items">
               <li>
                 <Link
                   activeClass="active"
@@ -136,9 +73,77 @@ const MainNavBar = function() {
               </li>
             </ul>
           </nav>
+          <div className="mobile-menu-icon" onClick={() => setMobileMenu(true)}>
+            <span>
+              <i className="fa fa-bars" aria-hidden="true" />
+            </span>
+          </div>
         </div>
       </div>
-    </div>
+      <div className={`mobile-menu ${isMobileMenu ? "active" : ""}`}>
+        <div className="container">
+          <div className="close-icon" onClick={() => setMobileMenu(false)}>
+            <i className="fa fa-close" aria-hidden="true" />
+          </div>
+          <nav className="mobile-menu-wrapper">
+            <ul>
+              <li>
+                <Link
+                  onClick={() => setMobileMenu(false)}
+                  activeClass="active"
+                  to="header"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  HELLO
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={() => setMobileMenu(false)}
+                  activeClass="active"
+                  to="section1"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  RESUME
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={() => setMobileMenu(false)}
+                  activeClass="active"
+                  to="section1"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  PORTFOLIO
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={() => setMobileMenu(false)}
+                  activeClass="active"
+                  to="section1"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  CONTACT
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </Fragment>
   );
 };
 
