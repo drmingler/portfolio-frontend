@@ -4,10 +4,10 @@ import { getAchievements } from "../utils/api";
 
 const Resume = () => {
   const [achievements, setAchievements] = useState(null);
-  console.log(achievements);
   useEffect(() => {
     getAchievements().then(response => setAchievements(response));
   }, []);
+
   return (
     <section id={"resume"} className="container resume-section">
       <div className="row">
