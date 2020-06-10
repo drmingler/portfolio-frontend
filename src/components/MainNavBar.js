@@ -38,7 +38,7 @@ const MainNavBar = function() {
               <li>
                 <Link
                   activeClass="active"
-                  to="section1"
+                  to="resume"
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -104,7 +104,7 @@ const MainNavBar = function() {
                 <Link
                   onClick={() => setMobileMenu(false)}
                   activeClass="active"
-                  to="section1"
+                  to="resume"
                   spy={true}
                   smooth={true}
                   offset={-70}

@@ -30,7 +30,16 @@
       "endDate": "2019",
       "description": "Bachelors  Mathematics and Statistics",
       "typeOfDetails": "Employment"
+    },
+    {
+      "id": 3,
+      "name": "Upwork",
+      "startDate": "2003",
+      "endDate": "2010",
+      "description": "Awesome student, lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eius- mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+      "typeOfDetails": "Employment"
     }
+
   ],
 
   "projects": [
