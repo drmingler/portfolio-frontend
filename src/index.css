@@ -35,11 +35,16 @@ hr {
   opacity: 0.2;
 }
 
-nav .menu-items li,
 .projects-list li {
-  padding-right: 60px;
+  padding-right: 7%;
   text-transform: uppercase;
   line-height: 20px;
+}
+
+nav .menu-items li {
+  text-transform: uppercase;
+  line-height: 20px;
+  padding-right: 60px;
 }
 
 .container ul li {
@@ -356,7 +361,7 @@ section {
   color: #6d56c1;
 }
 
-li span.active{
+li span.active {
   color: #6d56c1;
 }
 .project-section {
@@ -446,8 +451,8 @@ li span.active{
   object-fit: contain;
 }
 
-.source-btn{
-  font-family:  Roboto Mono, monospace;
+.source-btn {
+  font-family: Roboto Mono, monospace;
   line-height: 14px;
   font-weight: 700;
   padding: 7px;

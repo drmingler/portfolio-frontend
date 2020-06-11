@@ -10,7 +10,11 @@ const Project = ({ eachProject }) => {
       <div className="project-details">
         <div className="project-card__info">
           <h3 className="project-card__title">{name}</h3>
-          <p className="project-card__description">{description}</p>
+          <p className="project-card__description">
+            {description.length < 200
+              ? description
+              : description.substr(0, 200) + "..."}
+          </p>
           <p className="project-card__stack">Used stack:</p>
           <ul className="list_of_stacks">
             {stacks.map((stack, index) => (
