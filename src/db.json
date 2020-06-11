@@ -38,6 +38,14 @@
       "endDate": "2010",
       "description": "Awesome student, lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eius- mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
       "typeOfDetails": "Employment"
+    },
+    {
+      "id": 4,
+        "name": "UCLA",
+      "startDate": "2006",
+      "endDate": "2010",
+      "description": "Awesome student, lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eius- mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+      "typeOfDetails": "Education"
     }
 
   ],
@@ -46,29 +54,35 @@
     {
       "id": 1,
       "name": "My Reads Web Application",
-      "picture": "https://github.com/drmingler/My-Read-App/blob/master/public/homepage.png",
+      "picture": "https://github.com/drmingler/Would-You-Rather-App/raw/master/public/view2.png",
       "stacks": ["html5", "css3", "JavaScript", "bower", "grunt", "grunt"],
       "description": "Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.",
       "typeOfProject": "Websites",
-      "userId" : "1"
+      "userId" : "1",
+      "projectLink" : "https://github.com/drmingler/My-Read-App/",
+      "siteLink" : "www.github.com"
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Mobile Flash Cards",
-      "picture": "https://github.com/drmingler/Mobile-FlashCards/blob/master/images/image1.png",
+      "picture": "https://github.com/drmingler/Would-You-Rather-App/raw/master/public/view2.png",
       "stacks": ["html5", "css3", "JavaScript", "bower", "grunt", "grunt"],
       "description": "Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.",
       "typeOfProject": "Mobile-Apps",
-      "userId" : "1"
+      "userId" : "1",
+      "projectLink" : "https://github.com/drmingler/Mobile-FlashCards",
+      "siteLink" : "www.github.com"
     },
     {
-      "id": 1,
+      "id": 3,
       "name": "Would You Rather App",
       "picture": "https://github.com/drmingler/Would-You-Rather-App/raw/master/public/view2.png",
       "stacks": ["html5", "css3", "JavaScript", "bower"],
       "description": "Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.",
       "typeOfProject": "Websites",
-      "userId" : "1"
+      "userId" : "1",
+      "projectLink" : "https://github.com/drmingler/Would-You-Rather-App/",
+      "siteLink" : "www.github.com"
     }
   ]
 }

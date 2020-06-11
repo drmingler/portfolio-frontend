@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 * {
   margin: 0;
@@ -76,9 +76,9 @@ header {
 
 .main-header {
   background: linear-gradient(
-          54deg,
-          rgba(74, 76, 179, 0.95) 34%,
-          hsla(0, 34%, 71%, 0.95)
+    54deg,
+    rgba(74, 76, 179, 0.95) 34%,
+    hsla(0, 34%, 71%, 0.95)
   );
 }
 
@@ -332,12 +332,12 @@ section {
   margin-bottom: 30px;
 }
 
-.projects-list a {
+.projects-list span {
   color: #999999;
   font-size: 12px;
 }
 
-.projects-list a:after {
+.projects-list span:after {
   content: "";
   position: absolute;
   width: 7px;
@@ -348,11 +348,15 @@ section {
   background: #6d56c1;
 }
 
-.projects-list a:hover {
+.projects-list span:hover {
   color: #6d56c1;
 }
-.projects-list a:hover:after {
+.projects-list span:hover:after {
   opacity: 1;
+  color: #6d56c1;
+}
+
+li span.active{
   color: #6d56c1;
 }
 .project-section {
@@ -442,15 +446,26 @@ section {
   object-fit: contain;
 }
 
+.source-btn{
+  font-family:  Roboto Mono, monospace;
+  line-height: 14px;
+  font-weight: 700;
+  padding: 7px;
+  color: white;
+  border: 0;
+  background: #6d56c1;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+}
 /*Footer*/
 .footer {
   margin-top: 35px;
   position: relative;
   width: 100%;
   background: linear-gradient(
-          54deg,
-          rgba(74, 76, 179, 0.95) 34%,
-          hsla(0, 34%, 71%, 0.95)
+    54deg,
+    rgba(74, 76, 179, 0.95) 34%,
+    hsla(0, 34%, 71%, 0.95)
   );
   color: white;
   font-size: 16px;
@@ -626,7 +641,6 @@ section {
 #menu-area.cus-menu .mobile-menu-icon :hover {
   color: #6d56c1;
 }
-
 
 .mobile-menu {
   height: 0;
@@ -842,5 +856,3 @@ section {
     padding-left: 100px;
   }
 }
-
-

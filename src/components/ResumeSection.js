@@ -2,12 +2,12 @@ import React, { Fragment, useEffect, useState } from "react";
 import ResumeItem from "./ResumeItem";
 import { getAchievements } from "../utils/api";
 
-const Resume = () => {
+const ResumeSection = () => {
   const [achievements, setAchievements] = useState(null);
+  
   useEffect(() => {
     getAchievements().then(response => setAchievements(response));
   }, []);
-
   return (
     <section id={"resume"} className="container resume-section">
       <div className="row">
@@ -66,4 +66,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default ResumeSection;
