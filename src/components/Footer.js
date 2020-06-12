@@ -12,7 +12,6 @@ const Footer = () => {
   // Custom hook to handle user input
   const { handleChange, handleSubmit, userInput } = useForm(postMessage);
 
-
   return (
     <div
       className="background"

@@ -6,10 +6,12 @@ const ProjectLists = ({ filteredProjects }) => {
     <ul className="project-cards">
       {filteredProjects &&
         filteredProjects.map(eachProject => (
-          <a href={eachProject.projectLink} key={eachProject.id} style={{color : "#555"}}>
-            <li className="project-card">
-              <Project eachProject={eachProject} />
-            </li>
+          <a
+            href={eachProject.projectLink}
+            key={eachProject.id}
+            style={{ color: "#555" }}
+          >
+            <Project eachProject={eachProject} />
           </a>
         ))}
     </ul>

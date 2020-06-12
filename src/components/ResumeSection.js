@@ -3,11 +3,13 @@ import ResumeItem from "./ResumeItem";
 import { getAchievements } from "../utils/api";
 
 const ResumeSection = () => {
-  const [achievements, setAchievements] = useState(null);
+  const [achievements, setAchievements] = useState([]);
   
   useEffect(() => {
     getAchievements().then(response => setAchievements(response));
   }, []);
+
+
   return (
     <section id={"resume"} className="container resume-section">
       <div className="row">

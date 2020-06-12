@@ -14,7 +14,7 @@ const ProjectSection = () => {
   // To sort the projects into categories
   const filteredProjects = filterProject(projects, ProjectType);
 
-  console.log(filteredProjects);
+
   return (
     <section className="container project-section" id={"project"}>
       <h2 className="section-title">My Projects_</h2>
