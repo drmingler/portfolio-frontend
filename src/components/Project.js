@@ -1,9 +1,18 @@
 import React, { Fragment } from "react";
+import { animated, useSpring } from "react-spring";
 
 const Project = ({ eachProject }) => {
   const { name, picture, stacks, description, siteLink } = eachProject;
+
+  const props = useSpring({
+    opacity: 1,
+    marginLeft: 0,
+    from: { opacity: 0, marginLeft: -1000 },
+    delay: "300"
+  });
+
   return (
-    <Fragment>
+    <animated.li className="project-card" style={props}>
       <div className="project-img">
         <img src={picture} alt="project-img" />
       </div>
@@ -21,15 +30,10 @@ const Project = ({ eachProject }) => {
               <li key={index}>{stack}</li>
             ))}
           </ul>
-          <span className="project-card__link">
-            {/*<button className={"source-btn"}>*/}
-            {/*  View Source*/}
-            {/*</button>*/}
-            {siteLink}
-          </span>
+          <span className="project-card__link">{siteLink}</span>
         </div>
       </div>
-    </Fragment>
+    </animated.li>
   );
 };
 

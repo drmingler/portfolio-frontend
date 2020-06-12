@@ -1,10 +1,22 @@
 import React, { Fragment } from "react";
 import headerPic from "../images/portfoliopic.png";
 import AboutMe from "./AboutMe";
-import { useContact } from "../hooks/hooks";
+import { useSpring, animated } from "react-spring";
 
-const Header = function() {
-  const user = useContact();
+const Header = function({ user }) {
+  const userInfoAnimation= useSpring({
+      opacity: 1,
+      from: { opacity: 0 },
+    delay: "1000"
+  });
+
+  const userProfileAnimation = useSpring({
+        opacity: 1,
+        marginLeft: 0,
+        from: { opacity: 0, marginLeft: -100 },
+        delay: "1000"
+    });
+
   return (
     <Fragment>
       {user && (
@@ -18,11 +30,13 @@ const Header = function() {
           <div className="main-header">
             <div className="container">
               <div className="row personal-profile">
-                <div className="portfolio-img">
+                <animated.div className="portfolio-img" style={userProfileAnimation}>
                   <img src={headerPic} alt={"emmanuel"} />
-                </div>
-                <div className="personal-info">
-                  <p className="personal-profile__name">{`${user.Name}_`}</p>
+                </animated.div>
+                <animated.div className="personal-info"  style={userInfoAnimation}>
+                  <p className="personal-profile__name" >
+                    {`${user.Name}_` || "David Emmanuel Olarewaju_"}
+                  </p>
                   <p className="personal-profile__work">Fullstack Developer</p>
                   <div className="contact-list">
                     <dl>
@@ -47,7 +61,7 @@ const Header = function() {
                       <i className="fa fa-skype" />
                     </a>
                   </p>
-                </div>
+                </animated.div>
               </div>
             </div>
           </div>

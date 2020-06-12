@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import { useSpring, animated } from "react-spring";
 
 const MainNavBar = function() {
   const [isScroll, setScroll] = useState(false);
@@ -17,9 +18,16 @@ const MainNavBar = function() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const menuBarAnimation = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    delay: "700"
+  });
+
   return (
     <Fragment>
-      <div id="menu-area" className={`${isScroll ? "cus-menu" : ""}`}>
+      <animated.div id="menu-area" className={`${isScroll ? "cus-menu" : ""}`} style={menuBarAnimation}>
         <div className="container">
           <nav>
             <ul className="menu-items">
@@ -79,7 +87,7 @@ const MainNavBar = function() {
             </span>
           </div>
         </div>
-      </div>
+      </animated.div>
       <div className={`mobile-menu ${isMobileMenu ? "active" : ""}`}>
         <div className="container">
           <div className="close-icon" onClick={() => setMobileMenu(false)}>
