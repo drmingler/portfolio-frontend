@@ -5,7 +5,7 @@ import ResumeSection from "./ResumeSection";
 import Footer from "./Footer";
 import ProjectSection from "./ProjectsSection";
 import { useContact } from "../hooks/hooks";
-import { Loader } from "semantic-ui-react";
+import spinner from "../images/spinner.gif";
 
 function App() {
   const user = useContact();
@@ -21,7 +21,7 @@ function App() {
         </Fragment>
       ) : (
         <div className="loader">
-          <Loader active inline="centered" />
+         <img src={spinner} alt={"spinner"}/>
         </div>
       )}
     </div>

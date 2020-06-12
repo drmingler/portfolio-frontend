@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -33,11 +35,6 @@ a {
 
 hr {
   opacity: 0.2;
-}
-
-/*Semantic-ui Spinner*/
-.ui.inline.loader {
-  top: 480px;
 }
 
 .projects-list li {
@@ -170,7 +167,6 @@ header {
 
 .personal-profile {
   padding-top: 90px;
-  /*display: flex;*/
   color: white;
   font-family: Roboto, sans-serif;
 }
@@ -179,7 +175,7 @@ header {
   padding-right: 15px;
 }
 .personal-profile__name {
-  margin-top: 40px;
+  margin-top: 40px !important;
   line-height: 50px;
   font-weight: 700;
   font-size: 44px;
@@ -215,6 +211,9 @@ header {
 .personal-profile__social .fa:hover {
   color: white;
   opacity: 1;
+}
+.personal-profile__social {
+  margin-bottom: 25px;
 }
 
 /*about me section*/
@@ -852,4 +851,17 @@ li span.active {
   .contact-info dd {
     padding-left: 100px;
   }
+}
+
+ /*Loading Page*/
+.loader img{
+  width: 100px;
+  height: 100px;
+}
+.loader{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 350px;
 }
