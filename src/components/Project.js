@@ -26,8 +26,8 @@ const Project = ({ eachProject }) => {
           </p>
           <p className="project-card__stack">Used stack:</p>
           <ul className="list_of_stacks">
-            {stacks.map((stack, index) => (
-              <li key={index}>{stack}</li>
+            {stacks.map((stack) => (
+                <li key={stack.id}>{stack.stackName}</li>
             ))}
           </ul>
           <span className="project-card__link">{siteLink}</span>
