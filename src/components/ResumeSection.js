@@ -1,13 +1,17 @@
 import React, { Fragment, useEffect, useState } from "react";
 import ResumeItem from "./ResumeItem";
-import { getAchievements } from "../utils/api";
+import { getAchievements, getUser } from "../utils/api";
+import {sortAchievements} from  "../utils/helpers";
 
 const ResumeSection = () => {
   const [achievements, setAchievements] = useState([]);
-  
+  const [users, setUsers] = useState([]);
+
   useEffect(() => {
-    getAchievements().then(response => setAchievements(response));
+    getAchievements().then(response => setAchievements(sortAchievements(response)));
+    getUser(1).then(response => setUsers(response));
   }, []);
+
 
 
   return (
@@ -16,25 +20,7 @@ const ResumeSection = () => {
         <div className="column">
           <h2 className="section-title">Resume_</h2>
           <p className="section__description">
-            Lorem ipsum dolor sit amet,
-            <i>
-              <b>communication</b>
-            </i>
-            adipisicing elit
-            <i>
-              <b>helpful</b>
-            </i>
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud
-            <i>
-              <b>sence of humour</b>
-            </i>
-            ullamco laboris nisi ut
-            <i>
-              <b>honest</b>
-            </i>
-            ea commodo consequat. Duis aute irure dolor in upper-intermediate
-            english level velit dolore eu ivivdtevoluptatem ontend developer.
+            {users.resumeDescription}
           </p>
         </div>
       </div>
