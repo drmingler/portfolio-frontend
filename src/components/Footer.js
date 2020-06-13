@@ -1,13 +1,17 @@
-import React  from "react";
+import React from "react";
 import { useContact, useForm } from "../hooks/hooks";
 import { contactForm } from "../utils/api";
+import { useAlert } from 'react-alert'
+
+
 const Footer = () => {
   // Custom hook to get all the user's information
   const user = useContact();
-
-    const postMessage = formdata => {
-        return contactForm(formdata);
-    };
+  alert = useAlert();
+  // Function to be passed as callback to send a post request with the form data
+  const postMessage = formdata => {
+    return contactForm(formdata).then(response => alert.show(response.message));
+  };
 
   // Custom hook to handle user input
   const { handleChange, handleSubmit, userInput } = useForm(postMessage);
@@ -41,7 +45,7 @@ const Footer = () => {
                   <a href={user.github}>Github</a>
                 </li>
                 <li>
-                  <a href={user.skypeinvite}>Skype</a>
+                  <a href={user.skypeInvite}>Skype</a>
                 </li>
               </ul>
             </div>
