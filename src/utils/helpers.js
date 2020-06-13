@@ -4,3 +4,17 @@ export const filterProject = (project, projectType) => {
   );
   return listOfProjects.length > 0 ? listOfProjects : project;
 };
+
+export const sortAchievements = achievements => {
+  const data = [];
+  const result = achievements
+    .filter(achievement => {
+      if (achievement.endDate === "Present") {
+        data.push(achievement);
+      } else {
+        return achievement;
+      }
+    })
+    .sort((a, b) => b.endDate - a.endDate);
+  return [...data, ...result];
+};
