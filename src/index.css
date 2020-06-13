@@ -865,3 +865,17 @@ li span.active {
   align-items: center;
   top: 350px;
 }
+
+/*alert*/
+.alert{
+  background: #6d56c1;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Roboto Mono, monospace;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px;
+}

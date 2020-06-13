@@ -4,7 +4,7 @@
       "id": 1,
       "Name": "David Emmanuel Olarewaju",
       "phone": "+36703924096",
-      "skypeinvite": "https://join.skype.com/invite/nxNcSUGL0Gjn",
+      "skypeInvite": "https://join.skype.com/invite/nxNcSUGL0Gjn",
       "skype": "davidemmanuel75",
       "email": "olarewajud2@gmail.com",
       "address": "Szigeti utca 6B 7624 Pécs Hungary",
@@ -42,7 +42,7 @@
     },
     {
       "id": 4,
-        "name": "UCLA",
+      "name": "UCLA",
       "startDate": "2006",
       "endDate": "2010",
       "description": "Awesome student, lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eius- mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
