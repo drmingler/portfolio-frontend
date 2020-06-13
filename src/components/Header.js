@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import headerPic from "../images/portfoliopic.png";
 import AboutMe from "./AboutMe";
 import { useSpring, animated } from "react-spring";
 
@@ -31,11 +30,11 @@ const Header = function({ user }) {
             <div className="container">
               <div className="row personal-profile">
                 <animated.div className="portfolio-img" style={userProfileAnimation}>
-                  <img src={headerPic} alt={"emmanuel"} />
+                  <img src={user.userPicture} alt={"emmanuel"} />
                 </animated.div>
                 <animated.div className="personal-info"  style={userInfoAnimation}>
                   <p className="personal-profile__name" >
-                    {`${user.Name}_` || "David Emmanuel Olarewaju_"}
+                    {`${user.name}_` || "David Emmanuel Olarewaju_"}
                   </p>
                   <p className="personal-profile__work">Fullstack Developer</p>
                   <div className="contact-list">
@@ -57,7 +56,7 @@ const Header = function({ user }) {
                     <a href={user.linkedin}>
                       <i className="fa fa-linkedin-square" />
                     </a>
-                    <a href={user.skypeinvite}>
+                    <a href={user.skypeInvite}>
                       <i className="fa fa-skype" />
                     </a>
                   </p>
@@ -67,7 +66,7 @@ const Header = function({ user }) {
           </div>
         </header>
       )}
-      {user && <AboutMe description={user.description} />}
+      {user && <AboutMe description={user.description} resumeLink={user.resumeLink} />}
       <hr />
     </Fragment>
   );
