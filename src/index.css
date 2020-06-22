@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
 
 
 * {
@@ -373,7 +374,6 @@ li span.active {
   display: flex;
   border: 1px solid #f1f1f1;
   height: 380px;
-  /*transition: all 1s ease 3s;*/
 }
 
 .project-details {
@@ -382,6 +382,7 @@ li span.active {
 
 .project-card__info {
   padding: 50px 50px 40px 30px;
+
 }
 
 .project-card {
@@ -879,3 +880,5 @@ li span.active {
   font-weight: 700;
   padding: 15px;
 }
+
+/*-webkit-box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);*/

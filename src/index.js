@@ -5,9 +5,8 @@ import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import {positions, transitions, Provider as AlertProvider} from "react-alert";
 
-
 const options = {
-    position: positions. TOP_RIGHT,
+    position: positions.TOP_RIGHT,
     timeout: 5000,
     offset: '30px',
     transition: transitions.SCALE

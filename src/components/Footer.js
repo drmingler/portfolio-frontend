@@ -7,10 +7,10 @@ import { useAlert } from 'react-alert'
 const Footer = () => {
   // Custom hook to get all the user's information
   const user = useContact();
-  alert = useAlert();
+  const alert = useAlert();
   // Function to be passed as callback to send a post request with the form data
-  const postMessage = formdata => {
-    return contactForm(formdata).then(response => alert.show(response.message));
+  const postMessage = formData => {
+    return contactForm(formData).then(response => alert.show(response.message));
   };
 
   // Custom hook to handle user input

@@ -1,8 +1,10 @@
-import React, { Fragment } from "react";
+import React  from "react";
 import { animated, useSpring } from "react-spring";
+
 
 const Project = ({ eachProject }) => {
   const { name, picture, stacks, description, siteLink } = eachProject;
+
 
   const props = useSpring({
     opacity: 1,

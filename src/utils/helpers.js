@@ -10,11 +10,12 @@ export const sortAchievements = achievements => {
   const result = achievements
     .filter(achievement => {
       if (achievement.endDate === "Present") {
-        data.push(achievement);
+         data.push(achievement);
+          return null
       } else {
         return achievement;
       }
     })
     .sort((a, b) => b.endDate - a.endDate);
-  return [...data, ...result];
+    return [...data, ...result]
 };
