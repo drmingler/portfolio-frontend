@@ -32,10 +32,9 @@ const ResumeSection = () => {
             {achievements.map(
               achievement =>
                 achievement.typeOfDetails === "Education" && (
-                  <li className="row">
+                  <li className="row" key={achievement.id}>
                     <ResumeItem
                       achievement={achievement}
-                      key={achievement.id}
                     />
                   </li>
                 )
@@ -48,10 +47,9 @@ const ResumeSection = () => {
             {achievements.map(
               achievement =>
                 achievement.typeOfDetails === "Employment" && (
-                  <li className="row">
+                  <li className="row" key={achievement.id}>
                     <ResumeItem
                       achievement={achievement}
-                      key={achievement.id}
                     />
                   </li>
                 )
