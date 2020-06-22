@@ -26,17 +26,18 @@ const ResumeSection = () => {
       {achievements && (
         <Fragment>
           <div className="resume-list">
-            <ScrollAnimation animateIn="fadeIn" >
+            <ScrollAnimation animateIn="fadeIn">
               <p className="resume-title">Education</p>
             </ScrollAnimation>
             {achievements.map(
               achievement =>
                 achievement.typeOfDetails === "Education" && (
-                  <ScrollAnimation animateIn="fadeIn" key={achievement.id}>
-                    <li className="row">
-                      <ResumeItem achievement={achievement} />
-                    </li>
-                  </ScrollAnimation>
+                  <li className="row">
+                    <ResumeItem
+                      achievement={achievement}
+                      key={achievement.id}
+                    />
+                  </li>
                 )
             )}
           </div>
@@ -47,11 +48,12 @@ const ResumeSection = () => {
             {achievements.map(
               achievement =>
                 achievement.typeOfDetails === "Employment" && (
-                  <ScrollAnimation animateIn="fadeIn" key={achievement.id}>
-                    <li className="row">
-                      <ResumeItem achievement={achievement} />
-                    </li>
-                  </ScrollAnimation>
+                  <li className="row">
+                    <ResumeItem
+                      achievement={achievement}
+                      key={achievement.id}
+                    />
+                  </li>
                 )
             )}
           </div>
