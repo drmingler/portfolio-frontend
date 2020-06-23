@@ -32,7 +32,9 @@ const Project = ({ eachProject }) => {
                 <li key={stack.id}>{stack.stackName}</li>
             ))}
           </ul>
+          {/*<button className="project-card__button">View Project</button>*/}
           <span className="project-card__link">{siteLink}</span>
+          {/*<span className="project-card__button"><i className="fa fa-external-link" aria-hidden="true"/></span>*/}
         </div>
       </div>
     </animated.li>
