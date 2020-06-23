@@ -50,4 +50,4 @@ export const contactForm = data =>
     body: JSON.stringify(data)
   })
     .then(response => response.json())
-    .catch(response => "Message Not Sent");
+    .catch(() =>({ "message" : "Message Not Sent" }));
