@@ -1,6 +1,4 @@
-
 const URL = "https://api.oladavid.com/api";
-
 
 const headers = {
   Accept: "application/json"
@@ -52,4 +50,4 @@ export const contactForm = data =>
     body: JSON.stringify(data)
   })
     .then(response => response.json())
-    .catch(response => response);
+    .catch(response => "Message Not Sent");
